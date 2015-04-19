@@ -5,10 +5,82 @@
 		<title></title>
 
 		<meta name="description" content="Webpage">
-		<link href="" rel="stylesheet">
+		<meta name="author" content="Terry Gunderson">
+		<link href="styles.css" rel="stylesheet">
 	</head>
 
 	<body>
-		<script></script>
+		<div class="addMonster">
+			<h2>Character and Monster Stats</h2>
+			<table>
+				<tr>
+					<td><label id="enteredName">Name:</label></td>
+					<td>
+						<form id="name" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="pMName"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="str">Strength:</label></td>
+					<td>
+						<form id="strength" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="userStr"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="dex">Dexterity:</label></td>
+					<td>
+						<form id="dexterity" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="userDex"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="con">Constitution:</label></td>
+					<td>
+						<form id="constitution" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="userCon"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="wis">Wisdom:</label></td>
+					<td>
+						<form id="wisdom" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="userWis"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="int">Intelligence:</label></td>
+					<td>
+						<form id="intelligence" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="userInt"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="char">Charisma:</label></td>
+					<td>
+						<form id="charisma" action="form_action.asp">
+						<input type="text" value="" size="8">
+						<p id="userChar"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<button type="button" id="addStats">Add Player and Monster to Records</button>
+				</tr>
+			</table>
+		</div>
+		<script src="app.js"></script>
 	</body>
 </html>

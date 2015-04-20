@@ -10,15 +10,22 @@
 	</head>
 
 	<body>
-		<div class="addMonster">
+		<div class="enterStats">
 			<h2>Character and Monster Stats</h2>
-			<table>
+			<table id="inputStats">
 				<tr>
-					<td><label id="enteredName">Name:</label></td>
+					<td><label id="pName">Player Name:</label></td>
 					<td>
-						<form id="name" action="form_action.asp">
+						<form id="plaName" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userName"></p>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><label id="mName">Monster Name:</label></td>
+					<td>
+						<form id="monName" action="form_action.asp">
+						<input type="text" value="" size="8">
 						</form>
 					</td>
 				</tr>
@@ -27,7 +34,6 @@
 					<td>
 						<form id="strength" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userStr"></p>
 						</form>
 					</td>
 				</tr>
@@ -36,7 +42,6 @@
 					<td>
 						<form id="dexterity" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userDex"></p>
 						</form>
 					</td>
 				</tr>
@@ -45,7 +50,6 @@
 					<td>
 						<form id="constitution" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userCon"></p>
 						</form>
 					</td>
 				</tr>
@@ -54,7 +58,6 @@
 					<td>
 						<form id="wisdom" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userWis"></p>
 						</form>
 					</td>
 				</tr>
@@ -63,7 +66,6 @@
 					<td>
 						<form id="intelligence" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userInt"></p>
 						</form>
 					</td>
 				</tr>
@@ -72,14 +74,55 @@
 					<td>
 						<form id="charisma" action="form_action.asp">
 						<input type="text" value="" size="8">
-						<p id="userChar"></p>
 						</form>
 					</td>
 				</tr>
 			</table><br>
 		</div>
+
+		<div class="showStats">
+			<table id="presentedStats">
+				<tr>
+					<th>Attributes:</th>
+					<th>Name</th>
+					<th>Strength</th>
+					<th>Dexterity</th>
+					<th>Constitution</th>
+					<th>Wisdom</th>
+					<th>Intelligence</th>
+					<th>Charisma</th>
+				</tr>
+				<tr>
+					<th>Player:</th>
+					<td id="playerName"></td>
+					<td id="playerStr"></td>
+					<td id="playerDex"></td>
+					<td id="playerCon"></td>
+					<td id="playerWis"></td>
+					<td id="playerInt"></td>
+					<td id="playerChar"></td>
+				</tr>
+				<tr>
+					<th>Monster:</th>
+					<td id="monsterName"></td>
+					<td id="monsterStr"></td>
+					<td id="monsterDex"></td>
+					<td id="monsterCon"></td>
+					<td id="monsterWis"></td>
+					<td id="monsterInt"></td>
+					<td id="monsterChar"></td>
+				</tr>
+			</table>
+		</div>
+
+
+
 		<button type="button" id="addStats">Add Player and Monster to Records</button>
-		<h2 id="result"></h2>
+		
+		<div id="answer">
+			<h2 id="result"></h2>
+		</div>
+		
 		<button type="button" id="fight">Fight!</button>
 		<script src="app.js"></script>
 	</body>

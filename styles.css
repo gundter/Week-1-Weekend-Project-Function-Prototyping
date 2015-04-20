@@ -1,11 +1,27 @@
-table {
-    width: 50%;
+body {
+	margin: auto;
+	background-color: #CCCCCC;
+	background-image: url("bodyImage.png");
 }
 
-table, th, td {
-   border: 1px solid black;
+
+table {
+    width: 50%;
+    background-color: white;
+    opacity: 0.6;
 }
 
 th {
     height: 50px;
+}
+
+#presentedStats{
+	text-align: center;
+}
+
+#answer {
+	margin-right: auto;
+	background-color: white;
+	opacity: 0.6;
+	font-color: white;
 }

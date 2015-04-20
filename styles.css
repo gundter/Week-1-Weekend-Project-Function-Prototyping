@@ -1,3 +1,7 @@
+h1 {
+	color: #CCFFFF;
+}
+
 body {
 	margin: auto;
 	background-color: #CCCCCC;
@@ -6,7 +10,7 @@ body {
 
 
 table {
-    width: 50%;
+    width: auto;
     background-color: white;
     opacity: 0.6;
 }
@@ -15,13 +19,10 @@ th {
     height: 50px;
 }
 
-#presentedStats{
+#presentedStats {
 	text-align: center;
 }
 
 #answer {
-	margin-right: auto;
-	background-color: white;
-	opacity: 0.6;
-	font-color: white;
+	color: #CCFFFF;
 }
